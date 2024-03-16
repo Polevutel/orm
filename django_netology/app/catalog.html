@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Телефоны</title>
+</head>
+<body>
+    <h1>Каталог телефонов</h1>
+    <ul>
+        {% for phone in phones %}
+            <li>{{ phone.name }} - Цена: {{ phone.price }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
